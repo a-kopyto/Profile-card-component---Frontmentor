@@ -17,19 +17,19 @@ body {
     overflow: hidden;     
     font-size: 18px;
     font-family: 'Kumbh Sans', sans-serif;
+    min-width: 0px;
 }
 
 #pattern-top {
     position: absolute;
-    top: -50%;
-    left: -10%;
-    width: 56%;
+    right: calc(51vw);
+    bottom: calc(65vh - 15vw);
 }
 #pattern-bottom {
     position: absolute;
-    bottom: -50%;
-    right: -10%;
-    width: 56%;
+    left: calc(49vw);
+    top: calc(50vh );
+    
 }
 
 /* MAIN */
@@ -119,17 +119,4 @@ span {
 
 #user:hover {
     color:hsl(229, 23%, 23%);
-}
-
-@media (max-width: 375px){
-    #pattern-top {
-        top: -30%;
-        left: -50%;
-        width: 100%;
-    }
-    #pattern-bottom {
-        bottom: -30%;
-        right: -50%;
-        width: 100%;
-    }
 }
