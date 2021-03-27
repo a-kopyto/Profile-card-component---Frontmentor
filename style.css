@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+    --grey: hsl(227, 10%, 46%);
+    --light-grey: hsl(0, 0%, 59%);
+    --main-font-size: 18px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: hsl(185, 75%, 39%);
+    height: 100vh;
+    overflow: hidden;     
+    font-size: 18px;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+#pattern-top {
+    position: absolute;
+    top: -50%;
+    left: -10%;
+    width: 56%;
+}
+#pattern-bottom {
+    position: absolute;
+    bottom: -50%;
+    right: -10%;
+    width: 56%;
+}
+
+/* MAIN */
+#card-component {
+    position: absolute;
+    background-color: white;
+    border-radius: 30px;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+/* TOP */
+#image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -50px;
+    border: 5px solid white;
+    border-radius: 50%;
+    position: relative;
+    width: 6rem;
+}
+.bold-font {
+    padding-top: 15px;
+    font-weight: 700;
+}
+
+span {
+    padding-left: 8px;
+    font-weight: 400;
+    color: var(--light-grey);
+}
+
+.city {
+    color: var(--light-grey);
+    padding-top: 10px;
+    padding-bottom: 22px;
+    font-size: 13px;
+}
+
+
+/* BOTTOM */
+#card-component-bottom {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 0.1px solid hsl(0, 0%, 59%);
+}
+
+.number {
+    font-weight: 700;
+    padding-top: 30px;
+}
+
+.description {
+    padding-top: 6px;
+    padding-bottom: 30px;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    color: var(--light-grey);
+}
+
+/* FOOTER */
+.attribution {
+    box-shadow: -4px -2px 15px 0px rgba(125,121,121,0.75);
+    -webkit-box-shadow: -4px -2px 15px 0px rgba(125,121,121,0.75);
+    -moz-box-shadow: -4px -2px 15px 0px rgba(125,121,121,0.75);
+    position: absolute;
+    font-size: 11px;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: white;
+    border-radius: 10px 10px 0 0;
+}
+
+.attribution p {
+    padding: 6px 40px;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+#user:hover {
+    color:hsl(229, 23%, 23%);
+}
+
+@media (max-width: 375px){
+    #pattern-top {
+        top: -30%;
+        left: -50%;
+        width: 100%;
+    }
+    #pattern-bottom {
+        bottom: -30%;
+        right: -50%;
+        width: 100%;
+    }
+}
